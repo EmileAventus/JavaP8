@@ -28,6 +28,7 @@ public abstract class AbstractNewsApiFeed {
 	protected Map<String, String> parameters;
 	protected URL url;
 
+	
 	/**
 	 * Default no-args constructor.
 	 */
