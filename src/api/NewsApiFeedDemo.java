@@ -16,7 +16,7 @@ import java.util.Scanner;
  */
 public class NewsApiFeedDemo extends AbstractNewsApiFeed {
 
-	public static final String SRC = "src/demo-data/top-headlines.json";
+	public static final String SRC = "demo-data/top-headlines.json";
 
 	@Override
 	public String getUrl() {
@@ -27,7 +27,7 @@ public class NewsApiFeedDemo extends AbstractNewsApiFeed {
 	public String request() {
 		String json = "";
 		try {
-			Scanner scanner = new Scanner(new File("src/demo-data/top-headlines.json"));
+			Scanner scanner = new Scanner(new File("demo-data/top-headlines.json"));
 			while (scanner.hasNext()) {
 				json += scanner.nextLine();
 			}
